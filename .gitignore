@@ -4,12 +4,6 @@
 *.obj
 *.elf
 
-# Dep files
-*.d
-
-# ~ files
-*~
-
 # Precompiled Headers
 *.gch
 *.pch
@@ -33,7 +27,6 @@
 *.i*86
 *.x86_64
 *.hex
-girbox
 
 # Debug files
 *.dSYM/
