@@ -31,14 +31,14 @@ Author: Billy Maddex
 #define DELAY 100
 
 int ps3_ir;
-char *device = "/dev/hidraw0";
+char *device = "/dev/ps3ir";
 GtkStatusbar *status_bar;
 
 int main(int argc, char *argv[])
 {
-  GtkBuilder              *gtkBuilder;
-  GtkWidget               *window;
-        
+  GtkBuilder *gtkBuilder;
+  GtkWidget *window;
+
   gtk_init(&argc, &argv);
 
   gtkBuilder = gtk_builder_new();
