@@ -236,6 +236,7 @@ Author: Billy Maddex
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">L</property>
                     <signal name="clicked" handler="command_button" swapped="no"/>
+                    <accelerator key="q" signal="clicked"/>
                     <accelerator key="l" signal="clicked"/>
                   </object>
                   <packing>
