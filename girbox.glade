@@ -224,8 +224,8 @@ Author: Billy Maddex
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">L or R</property>
                     <signal name="clicked" handler="command_button" swapped="no"/>
-                    <accelerator key="l" signal="clicked"/>
                     <accelerator key="r" signal="clicked"/>
+                    <accelerator key="l" signal="clicked"/>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -240,8 +240,8 @@ Author: Billy Maddex
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">K or E</property>
                     <signal name="clicked" handler="command_button" swapped="no"/>
-                    <accelerator key="e" signal="clicked"/>
                     <accelerator key="k" signal="clicked"/>
+                    <accelerator key="e" signal="clicked"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -606,30 +606,6 @@ Author: Billy Maddex
             <property name="left_attach">3</property>
             <property name="top_attach">1</property>
           </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="enter">
-            <property name="label" translatable="yes">Enter</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="tooltip_text" translatable="yes">E</property>
-            <signal name="clicked" handler="command_button" swapped="no"/>
-            <accelerator key="e" signal="clicked"/>
-          </object>
-          <packing>
-            <property name="left_attach">0</property>
-            <property name="top_attach">2</property>
-          </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
         </child>
       </object>
     </child>
