@@ -234,8 +234,9 @@ Author: Billy Maddex
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip_text" translatable="yes">L</property>
+                    <property name="tooltip_text" translatable="yes">L, R</property>
                     <signal name="clicked" handler="command_button" swapped="no"/>
+                    <accelerator key="r" signal="clicked"/>
                     <accelerator key="l" signal="clicked"/>
                   </object>
                   <packing>
