@@ -23,6 +23,7 @@ Author: Billy Maddex
 
 #include <string.h>
 #include <gtk/gtk.h>
+#include <libudev.h>
 
 /* ps3ir lib header */
 #include "ps3ir.h"
@@ -46,7 +47,6 @@ int main(int argc, char *argv[])
 
   window = GTK_WIDGET(gtk_builder_get_object(gtkBuilder, "mainWindow"));
   gtk_builder_connect_signals(gtkBuilder, NULL);
-  //g_object_unref(G_OBJECT(gtkBuilder));
 
   ps3_ir = ps3_open(device);
   ps3_set_mode(ps3_ir, VIRTUAL_MODE);
@@ -68,7 +68,8 @@ int main(int argc, char *argv[])
     status_message = "Device Connected";
 
   gtk_statusbar_push(status_bar, context_id, status_message);
-  
+
+  g_object_unref(G_OBJECT(gtkBuilder));
   gtk_widget_show(window);       
   gtk_main();
   

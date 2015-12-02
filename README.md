@@ -10,7 +10,8 @@ http://ps3ir.com/forum/
 
 
 Dependencies:
-GTK-3
+GTK+-3
 Glade
+Systemd
 
 Should be able to build by just running make, assuming build time dependencies are met.
